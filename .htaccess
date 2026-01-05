@@ -1,0 +1,11 @@
+# Redirigir todo el tráfico a la carpeta public
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Proteger archivos de configuración
+<FilesMatch "\.(env|json|lock|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

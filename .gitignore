@@ -1,0 +1,30 @@
+# Archivos de configuración sensibles
+config/database.php
+.env
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Carpetas de dependencias (si usaras Composer)
+/vendor/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de sesión PHP
+*.sess
+
+# Archivos subidos por usuarios (si aplica)
+/storage/uploads/
+/public/uploads/
